@@ -6,6 +6,7 @@
     <title>studyBud</title>
     <!-- styles -->
     <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- media files -->
     <link rel="stylesheet" href="../styles/media.css" />
     <!-- favicon -->
     <link
@@ -18,6 +19,11 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
       rel="stylesheet"
+    />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -44,16 +50,10 @@
       <div class="right-section">
         <div class="sign-up-section">sign up</div>
         <div class="log-in-section">log In</div>
-        <button class="sun-icon" title="light">
-          <i class="ri-sun-line"></i>
-        </button>
-        <button class="moon-icon" title="dark">
-          <i class="ri-moon-line"></i>
-        </button>
-        <button class="menu-open-button" title="open">
+        <button class="menu-open-button" id="menu-open" title="open">
           <i class="ri-menu-line"></i>
         </button>
-        <button class="menu-close-button" title="close">
+        <button class="menu-close-button" id="menu-close" title="close">
           <i class="ri-close-line"></i>
         </button>
       </div>
@@ -205,8 +205,6 @@
     <section class="faqs">
       <h2>Frequently Asked Questions</h2>
       <div class="container faqs-container">
-
-
         <article class="faq">
           <div class="faq-icon"><i class="ri-add-line"></i></div>
           <div class="question-answer">
@@ -310,10 +308,217 @@
             </p>
           </div>
         </article>
-
       </div>
     </section>
 
+    <!-- testimonials -->
+    <section class="container testimonials-container swiper myswiper">
+      <h2>students' Testimonials</h2>
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="../images/img/avatar-1.jpg" alt="" />
+          </div>
+          <div class="testimonial-info">
+            <h5>Tyke Cyborg</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo atque dicta, exercitationem mollitia, aliquam
+              dignissimos libero debitis ullam modi molestias necessitatibus
+              dolorem facilis reiciendis itaque voluptate inventore.
+              Reprehenderit, dolore inventore.
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="../images/img/avatar-2.jpg" alt="" />
+          </div>
+          <div class="testimonial-info">
+            <h5>Beast Mode</h5>
+            <small>techy</small>
+          </div>
+          <div class="testimonial-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo atque dicta, exercitationem mollitia, aliquam
+              dignissimos libero debitis ullam modi molestias necessitatibus
+              dolorem facilis reiciendis itaque voluptate inventore.
+              Reprehenderit, dolore inventore.
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="../images/img/avatar-3.jpg" alt="" />
+          </div>
+          <div class="testimonial-info">
+            <h5>Thunder storm</h5>
+            <small>Hacker</small>
+          </div>
+          <div class="testimonial-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo atque dicta, exercitationem mollitia, aliquam
+              dignissimos libero debitis ullam modi molestias necessitatibus
+              dolorem facilis reiciendis itaque voluptate inventore.
+              Reprehenderit, dolore inventore.
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="../images/img/avatar-4.jpg" alt="" />
+          </div>
+          <div class="testimonial-info">
+            <h5>Addictive</h5>
+            <small>Student</small>
+          </div>
+          <div class="testimonial-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo atque dicta, exercitationem mollitia, aliquam
+              dignissimos libero debitis ullam modi molestias necessitatibus
+              dolorem facilis reiciendis itaque voluptate inventore.
+              Reprehenderit, dolore inventore.
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="../images/img/avatar-2.jpg" alt="" />
+          </div>
+          <div class="testimonial-info">
+            <h5>Asphalt</h5>
+            <small>Racer</small>
+          </div>
+          <div class="testimonial-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo atque dicta, exercitationem mollitia, aliquam
+              dignissimos libero debitis ullam modi molestias necessitatibus
+              dolorem facilis reiciendis itaque voluptate inventore.
+              Reprehenderit, dolore inventore.
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="../images/img/avatar-1.jpg" alt="" />
+          </div>
+          <div class="testimonial-info">
+            <h5>Nicotine</h5>
+            <small>Gamer</small>
+          </div>
+          <div class="testimonial-body">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Explicabo atque dicta, exercitationem mollitia, aliquam
+              dignissimos libero debitis ullam modi molestias necessitatibus
+              dolorem facilis reiciendis itaque voluptate inventore.
+              Reprehenderit, dolore inventore.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-1">
+          <a href="index.html" class="footer-logo"><h4>studyBud</h4></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum
+            temporibus at modi. Error totam necessitatibus unde molestiae atque.
+          </p>
+        </div>
+
+        <div class="footer-2">
+          <h4>Permalinks</h4>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </div>
+
+        <div class="footer-3">
+          <h4>Primacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terns & Conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-4">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+254 712345678</p>
+            <p>example@gmail.com</p>
+          </div>
+
+          <ul class="footer-socials">
+            <li>
+              <a href="#"><i class="ri-facebook-circle-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="footer-copyright">
+          <small>Copyright &copy; studyBud 2023</small>
+        </div>
+      </div>
+    </footer>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../data/main.js"></script>
+
+    <script>
+      const swiperFirst = new Swiper(".myswiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+        breakpoints: {
+          400: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

@@ -100,6 +100,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 3rem;
 }
 /* navbar scrolling */
 .window-scoll {
@@ -107,11 +108,10 @@ img {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   transition: var(--transition);
 }
-.sun-icon,
-.menu-open-button,
-.menu-close-button {
+nav button {
   display: none;
 }
+
 .menu {
   display: flex;
   align-items: center;
@@ -132,7 +132,7 @@ img {
 header {
   position: relative;
   top: 5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* height: 70vh; */
   margin-bottom: 5rem;
   padding-bottom: 5rem;
@@ -148,11 +148,16 @@ header {
 .header-left p {
   margin: 1rem 0 2.4rem;
 }
+.header-right{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
 /* =============categories=========== */
 .categories {
   background: var(--color-bg1);
   /* padding: 4rem 0; */
-  height: 29rem;
+  height: 32rem;
 }
 .categories h1 {
   line-height: 1;
@@ -166,6 +171,9 @@ header {
 .categories-left {
   margin: 1rem 0 3rem;
   margin-top: 5rem;
+}
+.categories-left a{
+  margin-top: 2rem;
 }
 .categories-right {
   display: grid;
@@ -207,25 +215,25 @@ header {
   font-size: 0.85rem;
 }
 /* ============= courses ============= */
-.courses{
+.courses {
   margin-top: 15rem;
 }
-.courses-container{
+.courses-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.course{
+.course {
   background: var(--color-bg1);
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
 }
-.course:hover{
+.course:hover {
   background: transparent;
   border-color: var(--color-primary);
 }
-.course-info{
+.course-info {
   padding: 2rem;
 }
 .course-info p {
@@ -233,18 +241,18 @@ header {
   font-size: 0.9rem;
 }
 /* ============== FAQs =============== */
-.faqs{
+.faqs {
   margin-top: 10rem;
   background: var(--color-bg1);
   box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
   padding: 4rem 0;
 }
-.faqs-container{
+.faqs-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.faq{
+.faq {
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -253,18 +261,116 @@ header {
   background: var(--color-primary);
   cursor: pointer;
 }
-.faq h4{
+.faq h4 {
   font-size: 1rem;
   line-height: 2.2;
 }
-.faq-icon{
+.faq-icon {
   align-self: flex-start;
   font-size: 1.2rem;
 }
-.faq p{
+.faq p {
   margin-top: 0.8rem;
   display: none;
 }
 .faq.open p {
   display: block;
+}
+/*============= testimonials ==============*/
+.testimonials-container {
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.testimonial {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.avatar img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+}
+.avatar {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  object-position: center;
+  object-fit: cover;
+  border: 1rem solid var(--color-bg1);
+}
+.testimonial-info {
+  text-align: center;
+}
+.testimonial-body {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.testimonial-body::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    var(--color-primary),
+    var(--color-primary)
+  );
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.4rem;
+  transform: rotate(45deg);
+}
+.myswiper .swiper-pagination-bullet{
+  /* background: var(--color-danger); */
+  height: 10px;
+  width: 10px;
+  bottom: 10px;
+}
+/* ============ footer =========== */
+footer{
+  background: var(--color-bg1);
+  padding-top: 5rem;
+  font-size: 0.9rem;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+.footer-container > div h4 {
+  margin-bottom: 1.2rem;
+}
+.footer-1 p{
+  margin: 0 0 2rem;
+}
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+.footer-socials{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.footer-copyright{
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--color-bg2);
 }
