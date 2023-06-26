@@ -74,13 +74,13 @@
     transform-origin: top right;
     opacity: 0;
   }
-  .menu li:nth-child(2){
+  .menu li:nth-child(2) {
     animation-delay: 200ms;
   }
-  .menu li:nth-child(3){
+  .menu li:nth-child(3) {
     animation-delay: 400ms;
   }
-  .menu li:nth-child(4){
+  .menu li:nth-child(4) {
     animation-delay: 600ms;
   }
 
@@ -107,60 +107,85 @@
     color: white;
   }
   /* header */
-  header{
+  header {
     height: 52vh;
     margin-bottom: 2rem;
   }
-  .header-container{
+  .header-container {
     gap: 0;
     padding-bottom: 10rem;
     /* margin-bottom: 4rem; */
   }
   /* categories */
-  .categories{
+  .categories {
     height: auto;
-    padding-bottom: 3rem ;
+    padding-bottom: 3rem;
   }
-  .categories-container{
+  .categories-container {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .categories-left{
+  .categories-left {
     margin-right: 0;
   }
   /* popular courses */
-  .courses{
+  .courses {
     margin-top: 6rem;
   }
-  .courses-container{
-    grid-template-columns: 1fr 1fr ;
+  .courses-container {
+    grid-template-columns: 1fr 1fr;
   }
-  .footer-container{
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 15rem;
     padding-bottom: 5rem;
-  } 
+  }
 }
 
-@media screen and (max-width: 600px){
-
-    .container{
-        width: var(--container-width-sm);
-    }
-    .menu{
-        right: 3%;
-    }
-    .navbar{
-        width: 100%;
-    }
-    header{
-        width: 100%;
-        margin-bottom: 22rem;
-    }
-    .header-container{
-        grid-template-columns:1fr 1fr;
-    }
-    .categories{
-        width: 100%;
-    }
-    
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  .menu {
+    right: 3%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .sign-up-section,
+  .log-in-section {
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 5px;
+    font-size: 0.5rem;
+  }
+  header {
+    width: 100%;
+    margin-bottom: 22rem;
+  }
+  .header-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .categories {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .header-container {
+    grid-template-columns: 1fr;
+  }
+  .categories-right {
+    grid-template-columns: 1fr 1fr;
+  }
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+  .faqs-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }

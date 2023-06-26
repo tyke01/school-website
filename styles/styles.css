@@ -38,7 +38,7 @@ body {
   margin: 0 auto;
 }
 section {
-  padding: 6rem o;
+  padding: 6rem 0;
 }
 section h2 {
   text-align: center;
@@ -101,6 +101,21 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+}
+.logo-section a{
+  font-size: 1.5rem;
+  animation: opacityaim 2s linear alternate infinite ;
+}
+@keyframes opacityaim {
+  0%{
+      opacity: 1;
+  }
+  50%{
+      opacity: 0.5;
+  }
+  100%{
+      opacity: 1;
+  }
 }
 /* navbar scrolling */
 .window-scoll {
