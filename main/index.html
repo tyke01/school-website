@@ -27,6 +27,7 @@
     />
   </head>
   <body>
+    <!-- ======== NAVBAR ======== -->
     <nav class="navbar container">
       <div class="left-section">
         <div class="logo-section">
@@ -48,8 +49,12 @@
         </li>
       </ul>
       <div class="right-section">
-        <div class="sign-up-section">sign up</div>
-        <div class="log-in-section">log In</div>
+        <div class="sign-up-section">
+          <a href="#">Sign up</a>
+        </div>
+        <div class="log-in-section">
+          <a href="#">Log In</a>
+        </div>
         <button class="menu-open-button" id="menu-open" title="open">
           <i class="ri-menu-line"></i>
         </button>
@@ -58,7 +63,7 @@
         </button>
       </div>
     </nav>
-
+    <!-- ============= HEADER =========== -->
     <header>
       <div class="container header-container">
         <div class="header-left">
@@ -79,8 +84,7 @@
         </div>
       </div>
     </header>
-    <!-- category -->
-
+    <!-- ============= CATEGORY ============= -->
     <section class="section categories">
       <div class="container categories-container">
         <div class="categories-left">
@@ -152,9 +156,7 @@
         </div>
       </div>
     </section>
-
-    <!-- courses -->
-
+    <!--============= COURSES =============== -->
     <section class="courses">
       <h2>popular courses</h2>
       <div class="container courses-container">
@@ -199,9 +201,7 @@
         </article>
       </div>
     </section>
-
-    <!-- asked questions -->
-
+    <!-- ============= FREQUENTLY ASKED QUESTIONS ================ -->
     <section class="faqs">
       <h2>Frequently Asked Questions</h2>
       <div class="container faqs-container">
@@ -310,8 +310,7 @@
         </article>
       </div>
     </section>
-
-    <!-- testimonials -->
+    <!-- ============= TESTIMONIALS =========== -->
     <section class="container testimonials-container swiper myswiper">
       <h2>students' Testimonials</h2>
       <div class="swiper-wrapper">
@@ -431,7 +430,7 @@
       </div>
       <div class="swiper-pagination"></div>
     </section>
-
+    <!-- ========= FOOTER ========== -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-1">
@@ -445,11 +444,11 @@
         <div class="footer-2">
           <h4>Permalinks</h4>
           <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
         <div class="footer-3">
@@ -482,7 +481,6 @@
               <a href="#"><i class="ri-linkedin-fill"></i></a>
             </li>
           </ul>
-
         </div>
 
         <div class="footer-copyright">
@@ -493,7 +491,7 @@
     <!-- swiper js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="../data/main.js"></script>
-
+    <!-- swiper js code....its here because the swiper is only present on the main page -->
     <script>
       const swiperFirst = new Swiper(".myswiper", {
         slidesPerView: 3,
