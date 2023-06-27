@@ -313,6 +313,75 @@ footer ul li a:hover {
     .navbar{
         width: 100%;
     }
+
+    /* ============= MENU ============= */
+    nav button#menu-close {
+      display: none;
+      border: none;
+      font-size: 1.8rem;
+      color: var(--color-white);
+      background: transparent;
+    }
+    nav button#menu-open {
+      display: inline-block;
+      background: transparent;
+      font-size: 1.8rem;
+      color: var(--color-white);
+      border: none;
+      cursor: pointer;
+    }
+    .menu {
+      position: fixed;
+      top: 5rem;
+      right: 5%;
+      height: fit-content;
+      width: 18rem;
+      flex-direction: column;
+      gap: 0;
+      display: none;
+    }
+  
+    .menu li {
+      width: 100%;
+      height: 5.8rem;
+      animation: animateNavItems 400ms linear forwards;
+      transform-origin: top right;
+      opacity: 0;
+    }
+    .menu li:nth-child(2) {
+      animation-delay: 200ms;
+    }
+    .menu li:nth-child(3) {
+      animation-delay: 400ms;
+    }
+    .menu li:nth-child(4) {
+      animation-delay: 600ms;
+    }
+  
+    @keyframes animateNavItems {
+      0% {
+        transform: rotateZ(-90deg) rotateX(90deg) scale(0.1);
+      }
+      100% {
+        transform: rotateZ(0) rotateX(0) scale(1);
+        opacity: 1;
+      }
+    }
+  
+    .menu li a {
+      background: var(--color-primary);
+      box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+    }
+    .menu li a:hover {
+      background: var(--color-bg2);
+      color: white;
+    }
+
+    /* =========== END OF THE MENU ========= */
     .about-acievements{
         margin-top: 2rem;
     }
